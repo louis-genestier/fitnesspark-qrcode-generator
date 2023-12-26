@@ -1,0 +1,24 @@
+{
+  "name": "fitnesspark-qrcode-generator",
+  "module": "src/index.ts",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "latest",
+    "@types/qrcode": "^1.5.5",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "elysia": "^0.8.3",
+    "qrcode": "^1.5.3"
+  }
+}
